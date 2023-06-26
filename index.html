@@ -33,19 +33,30 @@
                     },
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif']
-                    }
+                    },
+                    maxWidth: {
+                        textWidth: '200px',
+                    },
+                    backgroundImage: {
+                        'patternCircles': "url('./assets/img/pattern-circles.svg')",
+                    },
+                    height: {
+                        'afterBG': '25rem',
+                    },
                 }
             }
         }
     </script>
 </head>
-<body class="font-manrope text-base font-semibold">
-    <header class="header">
-        <h2 class="">Simple, traffic-based pricing</h2>
-        <p class="">Sign-up for our 30-day trial. No credit card required.</p>
+<body class="font-manrope text-base font-semibold px-6 bg-neutral-veryPaleBlue">
+    <header class="flex flex-col justify-center items-center mt-24 mb-16 relative">
+        <div class="absolute w-screen h-afterBG bg-neutral-lightGrayish -z-20 rounded-bl-[195px]"></div>
+        <span class="bg-patternCircles bg-contain bg-no-repeat absolute w-36 h-36 -z-10 justify-self-center"></span>
+        <h2 class="max-[370px]:text-lg text-xl font-extrabold text-neutral-darkDesaturatedBlue text-center">Simple, traffic-based pricing</h2>
+        <p class="mt-2 max-w-textWidth text-center text-sm font-semibold leading-6 text-neutral-grayishBlue">Sign-up for our 30-day trial. No credit card required.</p>
     </header>
 
-    <main class="main">
+    <main class="">
         <article class="">
             <div class="">
                 <div class="">
