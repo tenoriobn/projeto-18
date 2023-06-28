@@ -23,7 +23,7 @@
                             paleBlue: 'hsl(226, 100%, 87%)',
                         },
                         neutral: {
-                            white: 'hsl (0, 0%, 100%)',
+                            white: 'hsl(0, 0%, 100%)',
                             veryPaleBlue: 'hsl(230, 100%, 99%)',
                             lightGrayish: 'hsl(224, 65%, 95%)',
                             lightGrayishBlue: 'hsl(223, 50%, 87%)',
@@ -41,7 +41,10 @@
                         'patternCircles': "url('./assets/img/pattern-circles.svg')",
                     },
                     height: {
-                        'afterBG': '25rem',
+                        'afterBG': '31.5rem',
+                    },
+                    letterSpacing: {
+                        widest: '1.74px',
                     },
                 }
             }
@@ -50,59 +53,64 @@
 </head>
 <body class="font-manrope text-base font-semibold px-6 bg-neutral-veryPaleBlue">
     <header class="flex flex-col justify-center items-center mt-24 mb-16 relative">
-        <div class="absolute w-screen h-afterBG bg-neutral-lightGrayish -z-20 rounded-bl-[195px]"></div>
+        <div class="absolute w-screen h-afterBG bg-neutral-lightGrayish -z-20 rounded-bl-[180px]"></div>
         <span class="bg-patternCircles bg-contain bg-no-repeat absolute w-36 h-36 -z-10 justify-self-center"></span>
         <h2 class="max-[370px]:text-lg text-xl font-extrabold text-neutral-darkDesaturatedBlue text-center">Simple, traffic-based pricing</h2>
         <p class="mt-2 max-w-textWidth text-center text-sm font-semibold leading-6 text-neutral-grayishBlue">Sign-up for our 30-day trial. No credit card required.</p>
     </header>
 
     <main class="">
-        <article class="">
+        <article class="bg-neutral-white pt-9 pb-8 rounded-lg shadow-md shadow-neutral-lightGrayish">
             <div class="">
-                <div class="">
-                    <h3 class="">100K Pageviews</h3>
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-xs font-black text-neutral-grayishBlue uppercase tracking-widest text-center mb-6">100K Pageviews</h3>
 
-                    <div class="">
-                        <h4 class="">$16.00</h4>
-                        <p class="">/month</p>
+                    <label for="page-slider" class="slider-label"></label>
+                    <input type="range" min="1" max="10" value="1" class="slider mb-8" id="page-slider">
+                    
+                    <div class="flex items-center gap-3 tracking-tighter mb-10">
+                        <h4 class="text-3xl	font-black text-neutral-darkDesaturatedBlue">$16.00</h4>
+                        <p class="text-sm font-medium text-neutral-grayishBlue">/ month</p>
                     </div>
                 </div>
 
-                <label for="page-slider" class="slider-label"></label>
-                <input type="range" min="1" max="10" value="1" class="slider" id="page-slider">
-
-                <div class="">
-                    <p class="">Monthly Billing</p>
+                <div class="flex items-center justify-center gap-3 mb-10">
+                    <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0075rem]">Monthly Billing</p>
                     
-                    <label class="">
-                        <input class="" type="checkbox" id="">
+                    <label class="bg-neutral-lightGrayish inline-block relative w-11 h-6 rounded-3xl cursor-pointer">
+                        <input class="appearance-none w-3.5 h-3.5 rounded-full bg-neutral-white absolute cursor-pointer translate-y-2/4 bottom-1/2 left-1.5 checked:left-6" type="checkbox" id="">
                         <span class=""></span>
                     </label>
 
-                    <p class="">Yearly Billing</p>
-                    <p class="">25% discount</p>
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0112rem]">Yearly Billing</p>
+
+                        <div class="bg-primary-lightGrayishRed w-10 h-5 rounded-3xl flex items-center justify-center">
+                            <p class="text-[10px] font-black tracking-[.0112rem] text-primary-lightRed">-25%</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="">
-                <div class="">
-                    <div class="">
+            <div class="flex flex-col justify-center items-center gap-8 pt-7 border-t border-neutral-lightGrayish">
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <div class="flex items-center gap-4">
                         <img src="assets/img/icon-check.svg" alt="" class="">
-                        <p class="">Unlimited website</p>
+                        <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0105rem]">Unlimited website</p>
                     </div>
 
-                    <div class="">
+                    <div class="flex items-center gap-4">
                         <img src="assets/img/icon-check.svg" alt="" class="">
-                        <p class="">100% data ownership</p>
+                        <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0105rem]">100% data ownership</p>
                     </div>
 
-                    <div class="">
+                    <div class="flex items-center gap-4">
                         <img src="assets/img/icon-check.svg" alt="" class="">
-                        <p class="">Email reports</p>
+                        <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0105rem]">Email reports</p>
                     </div>
                 </div>
 
-                <button class="">Start my trial</button>
+                <button class="bg-neutral-darkDesaturatedBlue w-full max-w-[170px] h-10 rounded-3xl text-xs font-black text-primary-paleBlue tracking-[.0105rem]">Start my trial</button>
             </div>
         </article>
     </main>
