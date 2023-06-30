@@ -34,8 +34,14 @@
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif']
                     },
+                    fontSize: {
+                        '28': '1.75rem',
+                        '15': '.9375rem',
+                        '13': '.8125rem',
+                    },
                     maxWidth: {
-                        textWidth: '200px',
+                        textWidthSm: '170px',
+                        textWidthMd: '600px',
                     },
                     backgroundImage: {
                         'patternCircles': "url('./assets/img/pattern-circles.svg')",
@@ -46,17 +52,26 @@
                     letterSpacing: {
                         widest: '1.74px',
                     },
+                    margin: {
+                        '92': '5.75rem',
+                    },
+                    borderRadius: {
+                        '180': '11.25rem',
+                    },
+                    screens: {
+                        '370': '370px',
+                    },
                 }
             }
         }
     </script>
 </head>
 <body class="font-manrope text-base font-semibold px-6 bg-neutral-veryPaleBlue">
-    <header class="flex flex-col justify-center items-center mt-24 mb-16 relative">
-        <div class="absolute w-screen h-afterBG bg-neutral-lightGrayish -z-20 rounded-bl-[180px]"></div>
-        <span class="bg-patternCircles bg-contain bg-no-repeat absolute w-36 h-36 -z-10 justify-self-center"></span>
-        <h2 class="max-[370px]:text-lg text-xl font-extrabold text-neutral-darkDesaturatedBlue text-center">Simple, traffic-based pricing</h2>
-        <p class="mt-2 max-w-textWidth text-center text-sm font-semibold leading-6 text-neutral-grayishBlue">Sign-up for our 30-day trial. No credit card required.</p>
+    <header class="flex flex-col justify-center items-center mt-24 md:mt-28 mb-16 md:mb-92 relative">
+        <div class="absolute bg-neutral-lightGrayish rounded-180 w-screen h-afterBG -z-20"></div>
+        <span class="absolute bg-patternCircles bg-contain bg-no-repeat justify-self-center w-36 h-36 -z-10"></span>
+        <h2 class="max-370:text-lg text-xl md:text-28 font-extrabold text-neutral-darkDesaturatedBlue text-center">Simple, traffic-based pricing</h2>
+        <p class="mt-2 md:mt-4 max-w-textWidthSm md:max-w-max text-center text-13 md:text-15 font-semibold leading-6 text-neutral-grayishBlue">Sign-up for our 30-day trial. No credit card required.</p>
     </header>
 
     <main class="">
