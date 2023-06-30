@@ -38,16 +38,20 @@
                         '28': '1.75rem',
                         '15': '.9375rem',
                         '13': '.8125rem',
+                        '40': '2.5rem',
                     },
                     maxWidth: {
                         textWidthSm: '170px',
                         textWidthMd: '600px',
+                        '540': '540px',
+                        '327': '327px',
                     },
                     backgroundImage: {
                         'patternCircles': "url('./assets/img/pattern-circles.svg')",
                     },
                     height: {
                         'afterBG': '31.5rem',
+                        'afterLg': '38rem',
                     },
                     letterSpacing: {
                         widest: '1.74px',
@@ -68,28 +72,28 @@
 </head>
 <body class="font-manrope text-base font-semibold px-6 bg-neutral-veryPaleBlue">
     <header class="flex flex-col justify-center items-center mt-24 md:mt-28 mb-16 md:mb-92 relative">
-        <div class="absolute bg-neutral-lightGrayish rounded-180 w-screen h-afterBG -z-20"></div>
+        <div class="absolute bg-neutral-lightGrayish rounded-bl-180 w-screen h-afterBG md:h-afterLg -z-20"></div>
         <span class="absolute bg-patternCircles bg-contain bg-no-repeat justify-self-center w-36 h-36 -z-10"></span>
         <h2 class="max-370:text-lg text-xl md:text-28 font-extrabold text-neutral-darkDesaturatedBlue text-center">Simple, traffic-based pricing</h2>
         <p class="mt-2 md:mt-4 max-w-textWidthSm md:max-w-max text-center text-13 md:text-15 font-semibold leading-6 text-neutral-grayishBlue">Sign-up for our 30-day trial. No credit card required.</p>
     </header>
 
-    <main class="">
-        <article class="bg-neutral-white pt-9 pb-8 rounded-lg shadow-md shadow-neutral-lightGrayish">
+    <main class="flex flex-col justify-center items-center">
+        <article class="max-370:px-4 bg-neutral-white pt-9 md:pt-12 pb-8 md:px-11 rounded-lg shadow-md shadow-neutral-lightGrayish max-w-327 md:max-w-540 w-full">
             <div class="">
-                <div class="flex flex-col justify-center items-center">
-                    <h3 class="text-xs font-black text-neutral-grayishBlue uppercase tracking-widest text-center mb-6">100K Pageviews</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+                    <h3 class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 text-xs md:text-sm font-black text-neutral-grayishBlue uppercase tracking-widest text-center mb-11 md:mb-0 self-center md:justify-self-start">100K Pageviews</h3>
 
                     <label for="page-slider" class="slider-label"></label>
-                    <input type="range" min="1" max="10" value="1" class="slider mb-8 input__range" id="page-slider">
+                    <input type="range" min="1" max="10" value="1" class="md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-3 md:mt-12 slider mb-12 md:mb-14 input__range" id="page-slider">
                     
-                    <div class="flex items-center gap-3 tracking-tighter mb-10">
-                        <h4 class="text-3xl	font-black text-neutral-darkDesaturatedBlue">$16.00</h4>
-                        <p class="text-sm font-medium text-neutral-grayishBlue">/ month</p>
+                    <div class="md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center gap-3 tracking-tighter mb-10 md:mb-0 md:justify-self-end">
+                        <h4 class="text-3xl text-40	font-black text-neutral-darkDesaturatedBlue">$16.00</h4>
+                        <p class="text-sm md:text-base font-medium text-neutral-grayishBlue">/ month</p>
                     </div>
                 </div>
 
-                <div class="flex items-center justify-center gap-3 mb-10">
+                <div class="flex items-center justify-center md:justify-end gap-3 mb-10">
                     <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0075rem]">Monthly Billing</p>
                     
                     <label class="bg-neutral-lightGrayish inline-block relative w-11 h-6 rounded-3xl cursor-pointer">
@@ -97,18 +101,18 @@
                         <span class=""></span>
                     </label>
 
-                    <div class="flex items-center gap-1.5">
+                    <div class="flex items-center gap-1.5 md:pe-5">
                         <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0112rem]">Yearly Billing</p>
 
-                        <div class="bg-primary-lightGrayishRed w-10 h-5 rounded-3xl flex items-center justify-center">
-                            <p class="text-[10px] font-black tracking-[.0112rem] text-primary-lightRed">-25%</p>
+                        <div class="bg-primary-lightGrayishRed w-10 md:w-20 h-5 rounded-3xl flex items-center justify-center">
+                            <p class="text-[10px] font-black tracking-[.0112rem] text-primary-lightRed">-25% <span class="hidden md:inline-block">discount</span></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col justify-center items-center gap-8 pt-7 border-t border-neutral-lightGrayish">
-                <div class="flex flex-col justify-center items-center gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-center md:items-center gap-8 pt-7 border-t border-neutral-lightGrayish">
+                <div class="flex flex-col justify-center items-center md:items-start gap-4">
                     <div class="flex items-center gap-4">
                         <img src="assets/img/icon-check.svg" alt="" class="">
                         <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0105rem]">Unlimited website</p>
@@ -125,7 +129,7 @@
                     </div>
                 </div>
 
-                <button class="bg-neutral-darkDesaturatedBlue w-full max-w-[170px] h-10 rounded-3xl text-xs font-black text-primary-paleBlue tracking-[.0105rem]">Start my trial</button>
+                <button class="bg-neutral-darkDesaturatedBlue w-full max-w-[170px] h-10 rounded-3xl text-xs font-black text-primary-paleBlue tracking-[.0105rem] justify-self-center md:justify-self-end">Start my trial</button>
             </div>
         </article>
     </main>
