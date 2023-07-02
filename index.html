@@ -96,8 +96,8 @@
                 <div class="flex items-center justify-center md:justify-end gap-3 mb-10">
                     <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0075rem]">Monthly Billing</p>
                     
-                    <label class="bg-neutral-lightGrayish inline-block relative w-11 h-6 rounded-3xl cursor-pointer">
-                        <input class="appearance-none w-3.5 h-3.5 rounded-full bg-neutral-white absolute cursor-pointer translate-y-2/4 bottom-1/2 left-1.5 checked:left-6" type="checkbox" id="">
+                    <label class="bg-neutral-lightGrayish hover:bg-primary-softCyan inline-block relative w-11 h-6 rounded-3xl cursor-pointer duration-200">
+                        <input class="appearance-none w-3.5 h-3.5 rounded-full bg-neutral-white absolute cursor-pointer translate-y-2/4 bottom-1/2 left-1.5 checked:left-6 duration-200" type="checkbox" id="">
                         <span class=""></span>
                     </label>
 
@@ -129,7 +129,7 @@
                     </div>
                 </div>
 
-                <button class="bg-neutral-darkDesaturatedBlue w-full max-w-[170px] h-10 rounded-3xl text-xs font-black text-primary-paleBlue tracking-[.0105rem] justify-self-center md:justify-self-end">Start my trial</button>
+                <button class="bg-neutral-darkDesaturatedBlue w-full max-w-[170px] h-10 rounded-3xl text-xs font-black text-primary-paleBlue hover:text-neutral-white tracking-[.0105rem] justify-self-center md:justify-self-end duration-200">Start my trial</button>
             </div>
         </article>
     </main>
@@ -137,3 +137,41 @@
     <script type="module" src="assets/js/1-script.js"></script>
 </body>
 </html>
+
+
+<!-- Estilização
+    * Estilizar botão de range
+        -Aplicar cor na barra conforme for arrastando a bolinha para o lado direito
+        - Aplicar hover
+        - Centralizar valor do meio (fica quase centralizado com o botão de liga/desliga em baixo)
+
+    (Aqui pode ser melhor fazer depois realizar algumas coisas no js (criação de objeto, entender como enviar os valores para a barra e etc..))
+-->
+
+
+<!-- Lógica JS
+    * Criar lista de objetos com valores
+    * Ver como posso relacionar esses valores com a barra do range
+    * O valor do dinheiro tem que aumentar junto conforme aumenta a barra(requisito meu)
+    * Ao mudar o botão de monthly/yearly aplicar 25% de desconto do valor que aparece no topo.
+    * Caso os valores tenha haver com a quantidade de 'pageviews' mudar de '100k' para a quantidade necessária.
+-->
+
+
+<!-- Requisito do FrontendMentor
+    
+    - Veja o layout ideal para o aplicativo, dependendo do tamanho da tela do dispositivo ***
+    - Veja os estados de foco para todos os elementos interativos na página ***
+    - Use o controle deslizante e alterne para ver os preços de diferentes números de exibição de página (detalhes fornecidos abaixo)
+
+
+### Exibição de página e totais de preços
+
+Aqui estão os diferentes intervalos de exibição de página e os totais de preços mensais correspondentes:
+
+    - 10 mil visualizações de página / US$ 8 por mês
+    - 50 mil visualizações de página / US$ 12 por mês
+    - 100 mil visualizações de página / US$ 16 por mês
+    - 500 mil visualizações de página / US$ 24 por mês
+    - 1 milhão de visualizações de página / US$ 36 por mês
+-->
