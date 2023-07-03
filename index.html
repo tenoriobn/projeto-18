@@ -14,6 +14,13 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    backgroundImage: {
+                        'patternCircles': "url('./assets/img/pattern-circles.svg')",
+                    },
+                    borderRadius: {
+                        '180': '11.25rem',
+                        '200': '200px',
+                    },
                     colors: {
                         primary: {
                             softCyan: 'hsl(174, 77%, 80%)',
@@ -30,6 +37,9 @@
                             grayishBlue: 'hsl(225, 20%, 60%)',
                             darkDesaturatedBlue: 'hsl(227, 35%, 25%)',
                         },
+                        gradient: {
+                            progress: 'linear-gradient(90deg, rgb(234, 238, 251) 50%, rgb(234, 238, 251) 50%)'
+                        }
                     },
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif']
@@ -39,15 +49,6 @@
                         '15': '.9375rem',
                         '13': '.8125rem',
                         '40': '2.5rem',
-                    },
-                    maxWidth: {
-                        textWidthSm: '170px',
-                        textWidthMd: '600px',
-                        '540': '540px',
-                        '327': '327px',
-                    },
-                    backgroundImage: {
-                        'patternCircles': "url('./assets/img/pattern-circles.svg')",
                     },
                     height: {
                         'afterBG': '31.5rem',
@@ -59,8 +60,13 @@
                     margin: {
                         '92': '5.75rem',
                     },
-                    borderRadius: {
-                        '180': '11.25rem',
+                    maxWidth: {
+                        textWidthSm: '170px',
+                        textWidthMd: '600px',
+                        '540': '540px',
+                        '327': '327px',
+                        '279': '279px',
+                        '444': '444px',
                     },
                     screens: {
                         '370': '370px',
@@ -85,7 +91,7 @@
                     <h3 class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 text-xs md:text-sm font-black text-neutral-grayishBlue uppercase tracking-widest text-center mb-11 md:mb-0 self-center md:justify-self-start">100K Pageviews</h3>
 
                     <label for="page-slider" class="slider-label"></label>
-                    <input type="range" min="1" max="10" value="1" class="md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-3 md:mt-12 slider mb-12 md:mb-14 input__range" id="page-slider">
+                    <input type="range" min="1" max="5" value="1" class="appearance-none outline-none rounded-200 max-w-279 w-full h-2 relative bg-neutral-lightGrayish md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-3 md:mt-12 mb-12 md:mb-14 md:max-w-444 input__range" id="page-slider">
                     
                     <div class="md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center gap-3 tracking-tighter mb-10 md:mb-0 md:justify-self-end">
                         <h4 class="text-3xl text-40	font-black text-neutral-darkDesaturatedBlue">$16.00</h4>
@@ -93,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-center md:justify-end gap-3 mb-10">
+                <div class="flex items-center justify-center md:justify-end gap-3 md:gap-4 mb-10">
                     <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0075rem]">Monthly Billing</p>
                     
                     <label class="bg-neutral-lightGrayish hover:bg-primary-softCyan inline-block relative w-11 h-6 rounded-3xl cursor-pointer duration-200">
@@ -101,7 +107,7 @@
                         <span class=""></span>
                     </label>
 
-                    <div class="flex items-center gap-1.5 md:pe-5">
+                    <div class="flex items-center gap-1.5 md:gap-2 md:pe-5">
                         <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0112rem]">Yearly Billing</p>
 
                         <div class="bg-primary-lightGrayishRed w-10 md:w-20 h-5 rounded-3xl flex items-center justify-center">

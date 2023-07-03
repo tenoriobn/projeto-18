@@ -1,13 +1,6 @@
 .input__range {
-    width: 100%;
-    max-width: 17.4375rem;
-    height: .5rem;
-    appearance: none;
-    background-color: hsl(224, 65%, 95%);
-    border-radius: 200px;
-    position: relative;
-
     &::-webkit-slider-thumb {
+        -webkit-appearance: none;
         appearance: none;
         width: 40px;
         height: 40px;
@@ -20,9 +13,29 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: 50%;
+
+        &:hover {
+            background-color: rgb(165, 243, 235);
+            background-image: none;
+        }
     }
 
-    @media screen and (min-width: 768px) {
-        max-width: 444px;
+    &::-moz-range-thumb {
+        width: 40px;
+        height: 40px;
+        background-color: hsl(174, 86%, 45%);
+        box-shadow: 0px 8px 25px hsl(174, 86%, 45%);
+        border-radius: 50%;
+        cursor: pointer;
+
+        background-image: url(../../img/icon-slider.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 50%;
+
+        &:hover {
+            background-color: rgb(165, 243, 235);
+            background-image: none;
+        }
     }
 }
