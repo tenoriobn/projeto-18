@@ -88,13 +88,13 @@
         <article class="max-370:px-4 bg-neutral-white pt-9 md:pt-12 pb-8 md:px-11 rounded-lg shadow-md shadow-neutral-lightGrayish max-w-327 md:max-w-540 w-full">
             <div class="">
                 <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
-                    <h3 class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 text-xs md:text-sm font-black text-neutral-grayishBlue uppercase tracking-widest text-center mb-11 md:mb-0 self-center md:justify-self-start">100K Pageviews</h3>
+                    <h3 class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 text-xs md:text-sm font-black text-neutral-grayishBlue uppercase tracking-widest text-center mb-11 md:mb-0 self-center md:justify-self-start pageviews"></h3>
 
                     <label for="page-slider" class="slider-label"></label>
                     <input type="range" min="1" max="5" value="1" class="appearance-none outline-none rounded-200 max-w-279 w-full h-2 relative bg-neutral-lightGrayish md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-3 md:mt-12 mb-12 md:mb-14 md:max-w-444 input__range" id="page-slider">
                     
                     <div class="md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center gap-3 tracking-tighter mb-10 md:mb-0 md:justify-self-end">
-                        <h4 class="text-3xl text-40	font-black text-neutral-darkDesaturatedBlue">$16.00</h4>
+                        <h4 class="text-3xl text-40	font-black text-neutral-darkDesaturatedBlue price-month"></h4>
                         <p class="text-sm md:text-base font-medium text-neutral-grayishBlue">/ month</p>
                     </div>
                 </div>
@@ -145,18 +145,17 @@
 </html>
 
 
-<!-- Estilização
-    * Estilizar botão de range
-        -Aplicar cor na barra conforme for arrastando a bolinha para o lado direito
-        - Aplicar hover
-        - Centralizar valor do meio (fica quase centralizado com o botão de liga/desliga em baixo)
-
+<!-- Estilização***************
+    - Estilizar botão de range*************
+        -Aplicar cor na barra conforme for arrastando a bolinha para o lado direito********
+        - Aplicar hover*******************
+        - Centralizar valor do meio (fica quase centralizado com o botão de liga/desliga em baixo)***********
     (Aqui pode ser melhor fazer depois realizar algumas coisas no js (criação de objeto, entender como enviar os valores para a barra e etc..))
 -->
 
 
 <!-- Lógica JS
-    * Criar lista de objetos com valores
+    * Criar lista de objetos com valores*****
     * Ver como posso relacionar esses valores com a barra do range
     * O valor do dinheiro tem que aumentar junto conforme aumenta a barra(requisito meu)
     * Ao mudar o botão de monthly/yearly aplicar 25% de desconto do valor que aparece no topo.

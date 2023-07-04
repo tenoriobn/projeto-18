@@ -11,6 +11,8 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 50%;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 .input__range::-webkit-slider-thumb:hover {
   background-color: rgb(165, 243, 235);
@@ -27,6 +29,8 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 50%;
+  -moz-transition: 200ms;
+  transition: 200ms;
 }
 .input__range::-moz-range-thumb:hover {
   background-color: rgb(165, 243, 235);
