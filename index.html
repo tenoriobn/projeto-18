@@ -103,7 +103,7 @@
                     <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0075rem]">Monthly Billing</p>
                     
                     <label class="bg-neutral-lightGrayish hover:bg-primary-softCyan inline-block relative w-11 h-6 rounded-3xl cursor-pointer duration-200">
-                        <input class="appearance-none w-3.5 h-3.5 rounded-full bg-neutral-white absolute cursor-pointer translate-y-2/4 bottom-1/2 left-1.5 checked:left-6 duration-200" type="checkbox" id="">
+                        <input class="appearance-none w-3.5 h-3.5 rounded-full bg-neutral-white absolute cursor-pointer translate-y-2/4 bottom-1/2 left-1.5 checked:left-6 duration-200 checkbox" type="checkbox" id="">
                         <span class=""></span>
                     </label>
 
@@ -156,10 +156,14 @@
 
 <!-- Lógica JS
     * Criar lista de objetos com valores*****
-    * Ver como posso relacionar esses valores com a barra do range
-    * O valor do dinheiro tem que aumentar junto conforme aumenta a barra(requisito meu)
+    * Ver como posso relacionar esses valores com a barra do range*****
+    * O valor do dinheiro tem que aumentar junto conforme aumenta a barra(requisito meu) e também o PAGEVIEWS*****
+
     * Ao mudar o botão de monthly/yearly aplicar 25% de desconto do valor que aparece no topo.
-    * Caso os valores tenha haver com a quantidade de 'pageviews' mudar de '100k' para a quantidade necessária.
+        -- A cobrança é anual, então seria interessante quando o botão mudar para 'Yearly'/Anual
+            -- Mudar de month para anual/yearly..
+            -- Onde está aparecendo o valor mensal, substituir pelo valor anual, então x12 
+            -- E aplicar desconto de 25% nesse valor anual.
 -->
 
 
@@ -167,7 +171,7 @@
     
     - Veja o layout ideal para o aplicativo, dependendo do tamanho da tela do dispositivo ***
     - Veja os estados de foco para todos os elementos interativos na página ***
-    - Use o controle deslizante e alterne para ver os preços de diferentes números de exibição de página (detalhes fornecidos abaixo)
+    - Use o controle deslizante e alterne para ver os preços de diferentes números de exibição de página (detalhes fornecidos abaixo)****
 
 
 ### Exibição de página e totais de preços
