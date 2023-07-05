@@ -28,7 +28,7 @@ function priceControl() {
             const isChecked = checkbox.checked;
             const priceIndex = parseInt(range.value) - 1;
             const price = isChecked ? (priceValues[priceIndex] * (1 - 0.25)) * 12 : priceValues[priceIndex];
-            priceLabel.textContent = isChecked ? `$${price}` : `$${price}`;
+            priceLabel.textContent = isChecked ? `$${price}.00` : `$${price}`;
 
             console.log(price)
 
@@ -40,7 +40,7 @@ function priceControl() {
             const priceIndex = parseInt(event.target.value) - 1;
             const isChecked = checkbox.checked;
             const price = isChecked ? (priceValues[priceIndex] * (1 - 0.25)) * 12 : priceValues[priceIndex];
-            priceLabel.textContent = isChecked ? `$${price}` : `$${price}`;
+            priceLabel.textContent = isChecked ? `$${price}.00` : `$${price}`;
 
             console.log(price)
 
