@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/1-base/base.css">
+    <link rel="stylesheet" href="assets/css/input-styling/input-range.css">
     <title>Interactive pricing component</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -19,7 +19,7 @@
                     },
                     borderRadius: {
                         '180': '11.25rem',
-                        '200': '200px',
+                        '200': '12.5rem',
                     },
                     colors: {
                         primary: {
@@ -31,6 +31,7 @@
                         },
                         neutral: {
                             white: 'hsl(0, 0%, 100%)',
+                            poolBlue: 'hsl(222, 87%, 97%)',
                             veryPaleBlue: 'hsl(230, 100%, 99%)',
                             lightGrayish: 'hsl(224, 65%, 95%)',
                             lightGrayishBlue: 'hsl(223, 50%, 87%)',
@@ -61,8 +62,7 @@
                         '92': '5.75rem',
                     },
                     maxWidth: {
-                        textWidthSm: '170px',
-                        textWidthMd: '600px',
+                        '170': '170px',
                         '540': '540px',
                         '327': '327px',
                         '279': '279px',
@@ -78,10 +78,10 @@
 </head>
 <body class="font-manrope text-base font-semibold px-6 bg-neutral-veryPaleBlue">
     <header class="flex flex-col justify-center items-center mt-24 md:mt-28 mb-16 md:mb-92 relative">
-        <div class="absolute bg-neutral-lightGrayish rounded-bl-180 w-screen h-afterBG md:h-afterLg -z-20"></div>
+        <div class="absolute bg-neutral-poolBlue rounded-bl-180 w-screen h-afterBG md:h-afterLg -z-20"></div>
         <span class="absolute bg-patternCircles bg-contain bg-no-repeat justify-self-center w-36 h-36 -z-10"></span>
         <h2 class="max-370:text-lg text-xl md:text-28 font-extrabold text-neutral-darkDesaturatedBlue text-center">Simple, traffic-based pricing</h2>
-        <p class="mt-2 md:mt-4 max-w-textWidthSm md:max-w-max text-center text-13 md:text-15 font-semibold leading-6 text-neutral-grayishBlue">Sign-up for our 30-day trial. No credit card required.</p>
+        <p class="mt-2 md:mt-4 max-w-170 md:max-w-max text-center text-13 md:text-15 font-semibold leading-6 text-neutral-grayishBlue">Sign-up for our 30-day trial. No credit card required.</p>
     </header>
 
     <main class="flex flex-col justify-center items-center">
@@ -99,10 +99,10 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-center md:justify-end gap-3 md:gap-4 mb-10">
+                <div class="max-370:flex-col flex items-center justify-center md:justify-end gap-3 md:gap-4 mb-10">
                     <p class="text-xs font-medium text-neutral-grayishBlue tracking-[.0075rem]">Monthly Billing</p>
                     
-                    <label class="bg-neutral-lightGrayish hover:bg-primary-softCyan inline-block relative w-11 h-6 rounded-3xl cursor-pointer duration-200">
+                    <label class="bg-neutral-lightGrayishBlue hover:bg-primary-softCyan inline-block relative w-11 h-6 rounded-3xl cursor-pointer duration-200">
                         <input class="appearance-none w-3.5 h-3.5 rounded-full bg-neutral-white absolute cursor-pointer translate-y-2/4 bottom-1/2 left-1.5 checked:left-6 duration-200 checkbox" type="checkbox" id="">
                         <span class=""></span>
                     </label>

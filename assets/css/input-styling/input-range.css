@@ -16,7 +16,6 @@
 }
 .input__range::-webkit-slider-thumb:hover {
   background-color: rgb(165, 243, 235);
-  background-image: none;
 }
 .input__range::-moz-range-thumb {
   width: 40px;
@@ -34,5 +33,4 @@
 }
 .input__range::-moz-range-thumb:hover {
   background-color: rgb(165, 243, 235);
-  background-image: none;
-}/*# sourceMappingURL=base.css.map */
+}/*# sourceMappingURL=input-range.css.map */
