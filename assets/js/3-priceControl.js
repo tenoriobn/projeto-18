@@ -9,11 +9,11 @@ export default function priceControl(range, checkbox, updatePrice, updatePriceLa
         range.setAttribute('max', priceValues.length);
         
         checkbox.addEventListener('change', () => {
-            updatePrice(priceValues, pageViews)
+            updatePrice(priceValues, pageViews);
         });
 
         range.addEventListener('input', () => {
-            updatePrice(priceValues, pageViews)
+            updatePrice(priceValues, pageViews);
         });
 
         updatePriceLabel(priceValues, pageViews);

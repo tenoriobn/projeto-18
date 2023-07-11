@@ -17,8 +17,8 @@ function updatePrice(priceValues, pageViews) {
 }
 
 function updatePriceLabel(priceValues, pageViews) {
-    const initialPrice = priceValues[0];
-    const initialPage = pageViews[0];
+    const initialPrice = priceValues[2];
+    const initialPage = pageViews[2];
     
     priceLabel.textContent = `$${initialPrice}`;
     pageviewsLabel.textContent = `${initialPage} Pageviews`;
